@@ -8,18 +8,40 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <!-- Hero Section Start-->
-<section id="home" class="pt-36 pb-32 bg-cover bg-center bg-local" style="background-image: url('/src/img/bg.jpg');"> 
-    <div class="container">
-        <div class="flex flex-wrap">
-            <div class="w-full self-center px-4">
-                <h1 class="font-bold text-slate-100 text-4xl italic">Best Support Lightning Protection</h1>
-                <p class="text-base text-secondary italic"><span class="font-semibold">orbital-alkaneru.co.id </span>adalah website resmi distributor produk</p>
-                <p class="text-base text-secondary italic">Orbital Tech Lightning Protection di Indonesia</p>
+    <!-- Navbar Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="block py-2">
+                        <img src="/src/img/logo/alkaneru-logo.png" class="h-16 px-2 md:h-20">
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="burgir" name="burgir" type="button" class="block absolute right-4">
+                        <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        <span class="burgir-line transition duration-300 ease-in-out"></span>
+                        <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-   <!-- Hero Section End-->
+
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start-->
+    <section id="home" class="pt-36 pb-32 bg-cover bg-center bg-slate-700 bg-blend-overlay bg-local" style="background-image: url('/src/img/bg.jpg');"> 
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4">
+                    <h1 class="font-bold text-white text-2xl text-right italic drop-shadow-xl md:text-4xl lg:text-6xl">Best Support Lightning Protection</h1>
+                    <p class="text-base text-white italic text-right invisible md:visible lg:text-xl"><span class="font-semibold">orbital-alkaneru.co.id </span>adalah website resmi distributor produk <span class="block text-base">Orbital Tech Lightning Protection di Indonesia</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End-->
+    <script src="/src/js/script.js"></script>
 </body>
 </html> 
