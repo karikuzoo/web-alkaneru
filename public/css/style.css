@@ -518,6 +518,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-self: center;
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-local {
+  background-attachment: local;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -525,6 +545,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-4xl {
@@ -535,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-semibold {
@@ -553,4 +581,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(122 122 122 / var(--tw-text-opacity));
+}
+
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
