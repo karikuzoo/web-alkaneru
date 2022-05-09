@@ -12,7 +12,9 @@ window.onscroll = function(){
 
 //burgir
 const burgir = document.querySelector('#burgir');
+const navMenu = document.querySelector('#nav-menu');
 
 burgir.addEventListener('click', function(){
     burgir.classList.toggle('burgir-active');
-})
+    navMenu.classList.toggle('hidden');
+});
