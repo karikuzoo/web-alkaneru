@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orbital-Alkaneru</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Navbar Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 lg:bg-white">
+    <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10 lg:bg-white">
         <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="block py-2">
-                        <img src="/asset/img/logo/alkaneru-logo.png" alt="logo alkaneru" class="h-16 px-2 md:h-20">
-                    </a>
-                </div>
-                <div class="flex items-center px-4">
-                    <button id="burgir" name="burgir" type="button" class="block absolute right-4 lg:hidden">
+            <div class="flex justify-between relative">
+                
+                <!-- Mobile Navbar-->
+                <div class="flex lg:hidden items-center px-4">
+                    <button id="burgir" name="burgir" type="button" class="block absolute lg:hidden">
                         <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
                         <span class="burgir-line transition duration-300 ease-in-out"></span>
                         <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[450px] w-full right-4 top-full md:max-w-[1200px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[450px] w-full left-4 top-full md:max-w-[1200px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
 
                         <ul class="block lg:flex">
                             <li class="group">
@@ -45,7 +41,68 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div class="flex lg:hidden items-center px-4">
+                    <a href="#home" class="block py-2">
+                        <img src="/asset/img/logo/alkaneru-logo.png" alt="logo alkaneru" class="h-16 px-2 md:h-20">
+                    </a>
+                </div>
+
+                <div class="flex lg:hidden items-center px-4">
+                    <a href="#login">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <!--End Mobile Navbar--> 
+                
+                <!--Dekstop Navbar-->
+                <div class="sm: hidden lg:flex items-center px-4">
+                    <a href="#home" class="block py-2">
+                        <img src="/asset/img/logo/alkaneru-logo.png" alt="logo alkaneru" class="h-16 px-2 md:h-20">
+                    </a>
+                </div>
+
+                <div class="sm: hidden lg:flex items-center px-4">
+                    <button id="burgir" name="burgir" type="button" class="block absolute lg:hidden">
+                        <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        <span class="burgir-line transition duration-300 ease-in-out"></span>
+                        <span class="burgir-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[450px] w-full center top-full md:max-w-[1200px] lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-black py-2 mx-8 flex group-hover:text-primary hover:font-semibold lg:text-black lg:font-semibold">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#product" class="text-base text-black py-2 mx-8 flex group-hover:text-primary hover:font-semibold lg:text-black lg:font-semibold">Product</a>
+                            </li>
+                            <li class="group">
+                                <a href="#project" class="text-base text-black py-2 mx-8 flex group-hover:text-primary hover:font-semibold lg:text-black lg:font-semibold">Project</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-black py-2 mx-8 flex group-hover:text-primary hover:font-semibold lg:text-black lg:font-semibold">Contact</a>
+                            </li>
+                            <li class="group">
+                                <a href="#shop" class="text-base text-black py-2 mx-8 flex group-hover:text-primary hover:font-semibold lg:text-black lg:font-semibold">Shop</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="sm: hidden lg:flex items-center px-4">
+                    <a href="#login">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <!--End Dekstop Navbar-->
             </div>
+
+            
         </div>
 
     </header>
@@ -64,13 +121,13 @@
     </section>
     <!-- Hero Section End-->
 
-    <!-- Agent Section Start -->
+    <!-- About Section Start -->
     <section id="agent" class="pt-48 pb-32 bg-cover bg-center bg-gray-600">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4">
-                    <h1 class="font-bold text-white text-2xl md:text-4xl lg:text-6xl text-center">Agent</h1>
-
+                    <h1 class="font-bold text-white text-2xl pb-4 text-center md:text-4xl lg:text-6xl">About Us</h1>
+                    <h1 class="text-base text-white font-sans text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maiores ut corporis nemo voluptatibus dolorem beatae magni ducimus tempora obcaecati delectus aliquam iste eligendi ad accusamus et, iusto excepturi dignissimos.</h1>
                 </div>
 
             </div>
@@ -78,7 +135,7 @@
         </div>
 
     </section>
-    <!-- Agent Section End -->
+    <!-- About Section End -->
 
     <script src="/src/js/script.js"></script>
 </body>

@@ -506,6 +506,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -534,6 +538,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 100%;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -559,8 +567,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-\[450px\] {
@@ -571,12 +615,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform-origin: bottom left;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -589,10 +641,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-white {
@@ -615,6 +663,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-center {
   background-position: center;
+}
+
+.fill-blue-500 {
+  fill: #3b82f6;
 }
 
 .px-4 {
@@ -645,12 +697,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 8rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
 .pt-48 {
   padding-top: 12rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -661,8 +713,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.align-text-top {
-  vertical-align: text-top;
+.text-justify {
+  text-align: justify;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-base {
@@ -673,11 +729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -754,7 +805,7 @@ body {
   height: 2px;
   width: 30px;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .burgir-active > span:nth-child(1) {
@@ -782,33 +833,27 @@ body {
   color: rgb(110 193 228 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:invisible {
+    visibility: hidden;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-20 {
     height: 5rem;
-  }
-
-  .md\:max-w-\[700\] {
-    max-width: 700;
-  }
-
-  .md\:max-w-\[1300\] {
-    max-width: 1300;
-  }
-
-  .md\:max-w-\[1500\] {
-    max-width: 1500;
-  }
-
-  .md\:max-w-\[1600\] {
-    max-width: 1600;
-  }
-
-  .md\:max-w-\[1300px\] {
-    max-width: 1300px;
   }
 
   .md\:max-w-\[1200px\] {
@@ -853,23 +898,6 @@ body {
 
   .lg\:bg-transparent {
     background-color: transparent;
-  }
-
-  .lg\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .lg\:pt-48 {
-    padding-top: 12rem;
-  }
-
-  .lg\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .lg\:pt-40 {
-    padding-top: 10rem;
   }
 
   .lg\:pt-52 {
