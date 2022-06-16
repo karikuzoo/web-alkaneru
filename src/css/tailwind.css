@@ -27,3 +27,10 @@ body {
 .burgir-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+@layer components {
+  .card {
+    @apply bg-white text-gray-700 w-72 min-h-[10rem]
+    shadow-lg rounded-md overflow-hidden;
+  }
+}
